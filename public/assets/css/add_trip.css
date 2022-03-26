@@ -1,0 +1,43 @@
+.add-trip-form {
+    margin-top: 15rem;
+}
+
+.trip-form {
+    width: 60%;
+    margin: auto;
+}
+
+.trip-form .card-header {
+    background-color: #082740;
+    color: white;
+}
+
+.deletion {
+    display: inline;
+}
+
+.deletion .delete-trip {
+    background-color: #DC3545;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-trip {
+    padding: 0.2rem;
+    background-color: #FFA801;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.sahar {
+    font-family: serif;
+    font-size: 16px;
+}
+
+.edit-trip a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}

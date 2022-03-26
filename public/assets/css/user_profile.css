@@ -1,0 +1,43 @@
+.user_profile {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.user_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgb(221, 219, 219), 1px 1px 5px rgb(221, 219, 219);
+}
+
+.trip {
+    text-align: left;
+}
+
+.edit_user_form {
+    margin-top: 200px;
+}
+
+.edit_user_form .card {
+    width: 60%;
+    margin: auto;
+}
+
+.edit_user_form .card-header,
+.edit_user_form .user-edit-button {
+    color: #fff;
+    background-color: #082740;
+}
+
+.sahar-icon {
+    color: #FFA801;
+}
+
+.sahar-container h5 {
+    margin-bottom: 3rem;
+}
+
+.sahar-container {
+    font-family: var(--thm-font);
+}
