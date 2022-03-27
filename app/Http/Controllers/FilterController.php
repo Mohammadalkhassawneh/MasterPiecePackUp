@@ -27,7 +27,7 @@ class FilterController extends Controller
 
 
         $cats = Category::all();
-        $trips = Product::where('name', 'Like', '%' . $request->search . '%')->paginate(500);
-        return view('publicSite.trips-list', compact('trips', 'cats'));
+        $products = Product::where('name', 'Like', '%' . $request->search . '%')->paginate(500);
+        return view('publicSite.products-list', compact('products', 'cats'));
     }
 }

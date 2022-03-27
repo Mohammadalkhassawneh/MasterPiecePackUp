@@ -36,7 +36,6 @@ Route::get('/admin', function () {
     return view('admin.index', compact('user', 'product'));
 })->name('admin')->middleware('admin');
 
-// Hazem
 
 Route::resource("/reservation", ReservationController::class);
 
@@ -44,7 +43,7 @@ Route::resource("/reservation", ReservationController::class);
 Route::get('/', [HomeController::class, 'index'])->name('home2');
 // Route::get('/', [CategoryController::class, 'Categories'])->name('home2');
 
-// Hazem
+
 Route::resource('/user', UserController::class);
 Route::resource('/userprofile', UserProfileController::class);
 Route::resource('/sell', ProductSellerController::class);
@@ -67,7 +66,7 @@ Route::resource('shop', ShopController::class);
 Route::get('shopCat', [ShopController::class, 'showCat'])->name('shopCat');
 Route::resource('product-details', ProductDetailsController::class);
 Route::resource('/categories', CategoryController::class);
-Route::get('/destination', [CategoryController::class, 'categories'])->name('categories');
+Route::get('/categories', [CategoryController::class, 'categories'])->name('categories');
 Route::get('/contact', [CategoryController::class, 'contact'])->name("contact");
 
 //reservation route
@@ -75,3 +74,4 @@ Route::get('/contact', [CategoryController::class, 'contact'])->name("contact");
 Route::get('/reservations', [ReservationController::class, 'show'])->name('reservations');
 Route::get('/reservation.{id}', [ReservationController::class, 'getSeller'])->name('sellerReservation');
 Route::get('/reservations.{id}', [ReservationController::class, 'productFilter'])->name('productFilter');
+Route::get('/deleteReservations.{id}', [ReservationController::class, 'deleteReservations'])->name('deleteReservations');

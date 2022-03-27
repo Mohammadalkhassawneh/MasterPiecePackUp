@@ -7104,11 +7104,20 @@ tour-search-one__home-seven
 .h4Content {
     font-weight: bolder;
     background-color: #eeedde;
-    padding: 5em;
+    /* padding: 5em; */
     border-radius: 5px;
 }
 
 .cardshop {
     display: block;
     height: 20px;
+}
+
+@media (max-width: 1199px) {
+    .containerh4 {
+        flex-direction: column;
+    }
+    .imagerec img {
+        display: none;
+    }
 }

@@ -94,6 +94,8 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
+        $this->middleware('auth');
+
         //
         $product = Product::find($request->product_id);
         $product->user()->attach([ //
@@ -150,5 +152,15 @@ class ReservationController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function deleteReservations($id)
+    {
+        $reservations =   DB::table('product_user')->where('id', '=', $id);
+
+        $reservations->delete();
+
+
+        return redirect()->route("userprofile.index");
     }
 }
